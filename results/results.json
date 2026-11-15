@@ -1,0 +1,156 @@
+{
+  "settings": {
+    "main_yard": "6 stacks x 5 high, 24 containers (80% full)",
+    "ppo_seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "main_relocations_per_yard": {
+    "random": {
+      "mean": 17.633,
+      "ci95": [
+        17.388,
+        17.884
+      ]
+    },
+    "lowest_stack": {
+      "mean": 17.681,
+      "ci95": [
+        17.456,
+        17.909
+      ]
+    },
+    "min_max_heuristic": {
+      "mean": 3.151,
+      "ci95": [
+        2.973,
+        3.33
+      ]
+    },
+    "ppo_seed0": {
+      "mean": 2.462,
+      "ci95": [
+        2.358,
+        2.573
+      ]
+    },
+    "ppo_all_seeds_mean": [
+      2.462,
+      2.259,
+      2.286
+    ]
+  },
+  "paired_vs_min_max": {
+    "seed0": {
+      "mean_diff_vs_min_max": -0.689,
+      "ci95": [
+        -0.822,
+        -0.559
+      ],
+      "ppo_better": 388,
+      "tie": 399,
+      "ppo_worse": 213
+    },
+    "seed1": {
+      "mean_diff_vs_min_max": -0.892,
+      "ci95": [
+        -1.019,
+        -0.769
+      ],
+      "ppo_better": 426,
+      "tie": 405,
+      "ppo_worse": 169
+    },
+    "seed2": {
+      "mean_diff_vs_min_max": -0.865,
+      "ci95": [
+        -0.992,
+        -0.746
+      ],
+      "ppo_better": 394,
+      "tie": 462,
+      "ppo_worse": 144
+    }
+  },
+  "tiny_vs_exact_optimum": {
+    "optimal_mean": 1.267,
+    "random": {
+      "mean": 6.033,
+      "instances_at_optimum": 0
+    },
+    "lowest_stack": {
+      "mean": 5.55,
+      "instances_at_optimum": 1
+    },
+    "min_max_heuristic": {
+      "mean": 2.1,
+      "instances_at_optimum": 33
+    },
+    "ppo_seed0": {
+      "mean": 1.5,
+      "instances_at_optimum": 46
+    },
+    "ppo_seed1": {
+      "mean": 1.517,
+      "instances_at_optimum": 48
+    },
+    "ppo_seed2": {
+      "mean": 1.533,
+      "instances_at_optimum": 47
+    }
+  },
+  "other_yard_sizes_no_retraining": {
+    "4x4_12": {
+      "random": 6.89,
+      "lowest_stack": 6.66,
+      "min_max_heuristic": 1.4,
+      "ppo_mean_of_seeds": 1.139
+    },
+    "8x6_36": {
+      "random": 28.35,
+      "lowest_stack": 28.623,
+      "min_max_heuristic": 2.67,
+      "ppo_mean_of_seeds": 2.462
+    },
+    "10x6_48": {
+      "random": 38.437,
+      "lowest_stack": 39.077,
+      "min_max_heuristic": 2.867,
+      "ppo_mean_of_seeds": 2.718
+    }
+  },
+  "noisy_plan_std_as_fraction_of_N": {
+    "0.0": {
+      "random": 17.193,
+      "lowest_stack": 17.377,
+      "min_max_heuristic": 2.88,
+      "ppo_mean_of_seeds": 2.33
+    },
+    "0.05": {
+      "random": 17.247,
+      "lowest_stack": 17.377,
+      "min_max_heuristic": 4.307,
+      "ppo_mean_of_seeds": 3.442
+    },
+    "0.1": {
+      "random": 17.247,
+      "lowest_stack": 17.377,
+      "min_max_heuristic": 5.993,
+      "ppo_mean_of_seeds": 5.074
+    },
+    "0.2": {
+      "random": 17.247,
+      "lowest_stack": 17.377,
+      "min_max_heuristic": 9.017,
+      "ppo_mean_of_seeds": 8.081
+    },
+    "0.4": {
+      "random": 17.247,
+      "lowest_stack": 17.377,
+      "min_max_heuristic": 12.377,
+      "ppo_mean_of_seeds": 12.246
+    }
+  }
+}
